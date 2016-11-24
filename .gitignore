@@ -1,0 +1,5 @@
+## Build generated
+public/
+
+#other
+*.html
