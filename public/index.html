@@ -534,6 +534,136 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/16/IOS10语音识别详解/" itemprop="url">
+                  iOS语音识别
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-16T23:05:20+08:00" content="2016-11-16">
+              2016-11-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS技术/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/16/IOS10语音识别详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/16/IOS10语音识别详解/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>公司项目需要实现语音搜索，正好记录一下这个iOS10新出的API。</p>
+<pre><code>iOS10是一个变化比价大的版本，开放了很多接口，这样也更方便开发者自定义各种功能。本文主要讲解一下新增的Speech框架，有了这个框架，我们想要为自己的app增加语音识别功能，不要依赖第三方的服务，几十行代码就可以轻松搞定。demo地址在文章末尾。
+</code></pre><h3 id="一：基本配置"><a href="#一：基本配置" class="headerlink" title="一：基本配置"></a>一：基本配置</h3><ul>
+<li>Xcode8，iOS10系统真机</li>
+<li>导入头文件：OC <code>#import&lt;Speech/Speech.h&gt;</code>   swift <code>import Speech</code></li>
+<li>配置info.plist文件:配置两个权限，语音识别和麦克风</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;</div><div class="line">    &lt;string&gt;Your microphone will be used to record your speech when you press the &quot;Start Recording&quot; button.&lt;/string&gt;</div><div class="line">    </div><div class="line">    &lt;key&gt;NSSpeechRecognitionUsageDescription&lt;/key&gt;</div><div class="line">    &lt;string&gt;Speech recognition will be used to determine which words you speak into this device&apos;s microphone.&lt;/string&gt;</div></pre></td></tr></table></figure>
+<h3 id="二：用到的几个类"><a href="#二：用到的几个类" class="headerlink" title="二：用到的几个类"></a>二：用到的几个类</h3><p><code>AVAudioEngine</code>                           语音引擎，负责提供语音输入<br><code>SFSpeechAudioBufferRecognitionRequest</code>   处理语音识别请求<br><code>SFSpeechRecognizer</code>                       语音识别器<br><code>SFSpeechRecognitionTask</code>                 输出语音识别对象的结果<br><code>NSLocale</code>                                语言类型<br>语音识别一共就用到了这几个类，整体的流程也容易理解，语音识别器通过语音引擎，处理语音识别请求，把结果交给<code>SFSpeechRecognitionTask</code>处理，最后输出文字。<br><code>SFSpeechRecognizer</code> 自身有几个代理方法，实际上，如果只是将语音转化成文字，是不需要这几个代理方法的。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/16/IOS10语音识别详解/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/11/16/自定义刷新控件/" itemprop="url">
                   自定义刷新控件
                 </a>
@@ -635,136 +765,6 @@
 <li>改变满足刷新时的条件
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/11/16/自定义刷新控件/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/16/IOS10语音识别详解/" itemprop="url">
-                  iOS语音识别
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-16T23:05:20+08:00" content="2016-11-16">
-              2016-11-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS技术/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/16/IOS10语音识别详解/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/16/IOS10语音识别详解/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>公司项目需要实现语音搜索，正好记录一下这个iOS10新出的API。</p>
-<pre><code>iOS10是一个变化比价大的版本，开放了很多接口，这样也更方便开发者自定义各种功能。本文主要讲解一下新增的Speech框架，有了这个框架，我们想要为自己的app增加语音识别功能，不要依赖第三方的服务，几十行代码就可以轻松搞定。demo地址在文章末尾。
-</code></pre><h3 id="一：基本配置"><a href="#一：基本配置" class="headerlink" title="一：基本配置"></a>一：基本配置</h3><ul>
-<li>Xcode8，iOS10系统真机</li>
-<li>导入头文件：OC <code>#import&lt;Speech/Speech.h&gt;</code>   swift <code>import Speech</code></li>
-<li>配置info.plist文件:配置两个权限，语音识别和麦克风</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;</div><div class="line">    &lt;string&gt;Your microphone will be used to record your speech when you press the &quot;Start Recording&quot; button.&lt;/string&gt;</div><div class="line">    </div><div class="line">    &lt;key&gt;NSSpeechRecognitionUsageDescription&lt;/key&gt;</div><div class="line">    &lt;string&gt;Speech recognition will be used to determine which words you speak into this device&apos;s microphone.&lt;/string&gt;</div></pre></td></tr></table></figure>
-<h3 id="二：用到的几个类"><a href="#二：用到的几个类" class="headerlink" title="二：用到的几个类"></a>二：用到的几个类</h3><p><code>AVAudioEngine</code>                           语音引擎，负责提供语音输入<br><code>SFSpeechAudioBufferRecognitionRequest</code>   处理语音识别请求<br><code>SFSpeechRecognizer</code>                       语音识别器<br><code>SFSpeechRecognitionTask</code>                 输出语音识别对象的结果<br><code>NSLocale</code>                                语言类型<br>语音识别一共就用到了这几个类，整体的流程也容易理解，语音识别器通过语音引擎，处理语音识别请求，把结果交给<code>SFSpeechRecognitionTask</code>处理，最后输出文字。<br><code>SFSpeechRecognizer</code> 自身有几个代理方法，实际上，如果只是将语音转化成文字，是不需要这几个代理方法的。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/16/IOS10语音识别详解/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -946,13 +946,13 @@
 </div>
 
 <div class="powered-by">
-  powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  powered by <a class="theme-link">Hexo</a>
 </div>
 
 <div class="theme-info">
   theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+  <a class="theme-link">
+    Next
   </a>
 </div>
 
