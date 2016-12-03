@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://gcblog/github.io/"/>
-  <updated>2016-12-03T16:49:32.000Z</updated>
+  <updated>2016-12-03T16:53:13.000Z</updated>
   <id>http://gcblog/github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>错误总结</title>
+    <title>Swift小结</title>
     <link href="http://gcblog/github.io/2016/11/29/Swift%E5%B0%8F%E7%BB%93/"/>
     <id>http://gcblog/github.io/2016/11/29/Swift小结/</id>
     <published>2016-11-29T15:30:40.000Z</published>
-    <updated>2016-12-03T16:49:32.000Z</updated>
+    <updated>2016-12-03T16:53:13.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h3><ul>
 <li>格式 <code>lazy var 变量: 类型 = { 创建变量代码 }()</code></li>
