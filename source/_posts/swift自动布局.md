@@ -2,9 +2,9 @@
 title: swift自动布局
 date: 2016-11-24 23:48:09
 categories:
-  - swfit
+  - Swfit
 tags:
-  - swift
+  - Swift
   - 自动布局
 ---
 

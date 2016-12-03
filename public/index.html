@@ -278,7 +278,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/29/错误总结/" itemprop="url">
+                <a class="post-title-link" href="/2016/11/29/Swift小结/" itemprop="url">
                   错误总结
                 </a>
               
@@ -298,13 +298,32 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Swfit/" itemprop="url" rel="index">
+                    <span itemprop="name">Swfit</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/29/错误总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/29/错误总结/" itemprop="commentsCount"></span>
+                <a href="/2016/11/29/Swift小结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/29/Swift小结/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -328,9 +347,27 @@
 
       
         
-          
-            
-          
+          <h3 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h3><ul>
+<li>格式 <code>lazy var 变量: 类型 = { 创建变量代码 }()</code></li>
+<li>以 <code>lazy var</code> 开头，闭包末尾跟一个’()’</li>
+<li>懒加载的写法本质上是定义并执行一个闭包</li>
+<li>好处：没有解包的麻烦，并且 延迟创建</li>
+<li>与OC懒加载的区别：这里的懒加载只会执行一次，如果中途被设置成nil，也不会再次执行<br>懒加载完整的写法：<br>eg:懒加载一个数组</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lazy var dataList: [String] = &#123; () -&gt; [String] in</div><div class="line">        return [&quot;zero&quot;,&quot;one&quot;, &quot;two&quot;]</div><div class="line">&#125;()</div></pre></td></tr></table></figure>
+<p>in 和 前面的代码块可以省略，写成这样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lazy var dataList: [String] = &#123;</div><div class="line">        return [&quot;zero&quot;,&quot;one&quot;, &quot;two&quot;]</div><div class="line">&#125;()</div></pre></td></tr></table></figure>
+<p>后面的闭包和括号也能省略,这种写法是最为简洁的懒加载形式，一般这样写就可以了</p>
+<p><code>lazy var dataList: [String] = [&quot;zero&quot;,&quot;one&quot;, &quot;two&quot;]</code></p>
+<p>比如懒加载一个label</p>
+<p><code>lazy var label: UILabel = UIlabel()</code></p>
+<p>如果对label需要添加其他属性，就可以写成带（）的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">lazy var label :UILabel = &#123;</div><div class="line">       let label = UILabel()</div><div class="line">        label.font = UIFont.systemFont(ofSize: 15)</div><div class="line">        label.textColor = UIColor.red</div><div class="line">        return label</div><div class="line">&#125;()</div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/29/Swift小结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -406,8 +443,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/swfit/" itemprop="url" rel="index">
-                    <span itemprop="name">swfit</span>
+                  <a href="/categories/Swfit/" itemprop="url" rel="index">
+                    <span itemprop="name">Swfit</span>
                   </a>
                 </span>
 
@@ -826,7 +863,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">24</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
