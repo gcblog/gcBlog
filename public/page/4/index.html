@@ -278,6 +278,258 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/12/Xcode多工程联编及工程依赖/" itemprop="url">
+                  Xcode多工程联编及工程依赖
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-12T23:47:36+08:00" content="2016-03-12">
+              2016-03-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS配置/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS配置</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/12/Xcode多工程联编及工程依赖/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/12/Xcode多工程联编及工程依赖/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。</p>
+<h3 id="一-target"><a href="#一-target" class="headerlink" title="一:target"></a>一:target</h3><p>target指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系统中。project和target是一对多的关系。</p>
+<p>target会继承project的build settings，但可以以target为粒度设置build settings,且Xcode中当前一次只会有一个有效target,此有效target在xcode scheme中标识。</p>
+<p>若target A依赖target B的输出来构建，则A依赖B，当它们存在于一个xcode workspace中的时候，Xcode会发现此依赖关系并按顺序构建。这种依赖称为隐性依赖，当然也可以在build settings中声明显性依赖，也可将隐性依赖的两个target显性声明为没有依赖。比如可能在同一个workspace中同时构建一个库并构建一个依赖这个库的应用，则xcode会选择先构建库。但如果应用想链接库的某个特定版本，则可以显性声明这个依赖关系，此时隐性依赖即被覆盖了。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/12/Xcode多工程联编及工程依赖/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/12/iOS缓存机制-非结构化存储/" itemprop="url">
+                  iOS缓存机制-非结构化存储
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-12T19:43:33+08:00" content="2016-03-12">
+              2016-03-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS技术/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/12/iOS缓存机制-非结构化存储/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/12/iOS缓存机制-非结构化存储/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>对于一个优秀的app来说，缓存机制必不可少。图片，视频，音频等等各种类型的文件，怎么样去更好的管理这些数据，这对于我们开发者以及用户都是息息相关的。闲话不多说，先来看看几个github开源中牛逼的几个缓存框架。</p>
+<p>它们的使用方式都很类似，都是通过键值对(key-value)的形式进行存取，跟<code>NSUserDefaults</code>用法类似。</p>
+<p>以下排名按照性能由低到高：</p>
+<h3 id="1-EGOCache"><a href="#1-EGOCache" class="headerlink" title="1.EGOCache"></a>1.EGOCache</h3><p> 只提供磁盘缓存，没有内存缓存，一个比较简易的缓存框架。</p>
+<h3 id="2-TMCache"><a href="#2-TMCache" class="headerlink" title="2.TMCache"></a>2.TMCache</h3><p> 最初由 Tumblr 开发，但现在已经不再维护了。TMMemoryCache 实现有很多 NSCache 并没有提供的功能，比如数量限制、总容量限制、存活时间限制、内存警告或应用退到后台时清空缓存等。TMMemoryCache 在设计时，主要目标是线程安全，它把所有读写操作都放到了同一个 concurrent queue 中，然后用 dispatch_barrier_async 来保证任务能顺序执行。它错误的用了大量异步 block 回调来实现存取功能，以至于产生了很大的性能和死锁问题。它有磁盘缓存和内存缓存两部分组成，个人感觉一般好点的缓存库都会由磁盘缓存和内存缓存两部分组成，在我们第一次存储一个文件到磁盘的时候，缓存库会帮我们复制一份到内存缓存中，可以让我们在下次使用该文件的时候可以更快的找到。我上家公司就是用的这个缓存框架，挺好用的，也没出什么问题。</p>
+<h3 id="3-PINCache"><a href="#3-PINCache" class="headerlink" title="3.PINCache"></a>3.PINCache</h3><p> 是 Tumblr 宣布不在维护 TMCache 后，由 Pinterest 维护和改进的一个内存缓存。它的功能和接口基本和 TMCache 一样，但修复了性能和死锁的问题。它同样也用 dispatch_semaphore 来保证线程安全，但去掉了dispatch_barrier_async，避免了线程切换带来的巨大开销，也避免了可能的死锁。相当于是TMCache的优化版，而且一直有更新。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/12/iOS缓存机制-非结构化存储/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/02/27/一分钟学会环形进度条/" itemprop="url">
                   一分钟学会环形进度条
                 </a>
@@ -503,268 +755,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/25/iOS视频边下边播-缓存视频数据流/" itemprop="url">
-                  iOS视频边下边播--缓存视频数据流
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-25T16:01:50+08:00" content="2016-02-25">
-              2016-02-25
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS技术/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/25/iOS视频边下边播-缓存视频数据流/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/25/iOS视频边下边播-缓存视频数据流/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>google搜索“iOS视频变下边播”，有好几篇博客写到了实现方法，其实只有一篇，其他都是copy的，不过他们都是使用的本地代理服务器的方式，原理很简单，但是缺点也很明显，需要自己写一个本地代理服务器或者使用第三方库httpSever。如果使用httpSever作为本地代理服务器，如果只缓存一个视频是没有问题的，如果缓存多个视频互相切换，本地代理服务器提供的数据很不稳定，crash概率非常大。</p>
-<hr>
-<p>这里我采用ios7以后系统自带的方法实现视频边下边播，这里的边下边播不是单独开一个子线程去下载，而是把视频播放的数据给保存到本地。简而言之，就是使用一遍的流量，既播放了视频，也保存了视频。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">用到的框架：&lt;AVFoundation/AVFoundation.h&gt;</div><div class="line"></div><div class="line">用到的播放器：AVplayer</div></pre></td></tr></table></figure>
-<p>先说一下avplayer自身的播放原理，当我们给播放器设置好url等一些参数后，播放器就会向url所在的服务器发送请求(请求参数有两个值，一个是offset偏移量，另一个是length长度，其实就相当于NSRange一样)，服务器就根据range参数给播放器返回数据。这就是大致的原理，当然实际的过程还是略微比较复杂。</p>
-<hr>
-<p></br></p>
-<h3 id="一-下面进入主题"><a href="#一-下面进入主题" class="headerlink" title="一:下面进入主题"></a>一:下面进入主题</h3><h4 id="产品需求："><a href="#产品需求：" class="headerlink" title="产品需求："></a>产品需求：</h4><ul>
-<li>1.支持正常播放器的一切功能，包括暂停、播放和拖拽</li>
-<li>2.如果视频加载完成且完整，将视频文件保存到本地cache，下一次播放本地cache中的视频，不再请求网络数据</li>
-<li>3.如果视频没有加载完（半路关闭或者拖拽）就不用保存到本地cache</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/25/iOS视频边下边播-缓存视频数据流/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/25/iOS卡顿监控/" itemprop="url">
-                  iOS卡顿监控
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-25T15:46:16+08:00" content="2016-02-25">
-              2016-02-25
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS技术/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/25/iOS卡顿监控/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/25/iOS卡顿监控/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>在移动设备上开发软件,性能一直是我们最为关心的话题之一,我们作为程序员除了需要努力提高代码质量之外,及时发现和监控软件中那些造成性能低下的”罪魁祸首”也是我们神圣的职责.</p>
-</blockquote>
-<p>众所周知,iOS平台因为UIKit本身的特性,需要将所有的UI操作都放在主线程执行,所以也造成不少程序员都习惯将一些线程安全性不确定的逻辑,以及其它线程结束后的汇总工作等等放到了主线,所以主线程中包含的这些大量计算、IO、绘制都有可能造成卡顿.</p>
-<p>在Xcode中已经集成了非常方便的调试工具Instruments,它可以帮助我们在开发测试阶段分析软件运行的性能消耗,但一款软件经过测试流程和实验室分析肯定是不够的,在正式环境中由大量用户在使用过程中监控、分析到的数据更能解决一些隐藏的问题.</p>
-<h3 id="寻找卡顿的切入点"><a href="#寻找卡顿的切入点" class="headerlink" title="寻找卡顿的切入点"></a>寻找卡顿的切入点</h3><blockquote>
-<p>监控卡顿,最直接就是找到主线程都在干些啥玩意儿.我们知道一个线程的消息事件处理都是依赖于NSRunLoop来驱动,所以要知道线程正在调用什么方法,就需要从NSRunLoop来入手.CFRunLoop的代码是开源,可以在此处查阅到源代码<a href="http://opensource.apple.com/source/CF/CF-1151.16/CFRunLoop.c,其中核心方法CFRunLoopRun简化后的主要逻辑大概是这样的">http://opensource.apple.com/source/CF/CF-1151.16/CFRunLoop.c,其中核心方法CFRunLoopRun简化后的主要逻辑大概是这样的</a>:<br><br /></p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/25/iOS卡顿监控/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -810,7 +800,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -827,7 +817,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -909,7 +899,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
