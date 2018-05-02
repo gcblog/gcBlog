@@ -25,4 +25,13 @@ categories:
 ![查看运行状态的内存cpu](https://raw.githubusercontent.com/suifengqjn/demoimages/master/instruments/4.png)
 最后，我尝试在内存飙高的同时，点击左上角暂停运行，然后再下面的堆栈中继续找，这回终于找到了，是我自己的一个类渲染UI的时候导致的内存问题，找到具体的原因，解决起来也就轻松了。光看果然是没有用的，重要的还是要实践。
 
+leak 右侧几个属性选项
+![几个属性含义](https://raw.githubusercontent.com/suifengqjn/demoimages/master/instruments/7.png)
+
+Separate by Thread（建议选择）   按照线程分类查看哪些占用cpu最多
+Invert Call Tree（不建议选择）：调用树倒返过来，将习惯性的从根向下一级一级的显示，如选上就会返过来从最底层调用向一级一级的显示。如果想要查看那个方法调用为最深时使用会更方便些。
+Hidden System Librares (建议选择)   隐藏系统类库方法
+Flatten Recursion （一般不选）：选上它会将调用栈里递归函数作为一个入口。
+Hide Missing Symbols（建议选择）：隐藏丢失的符号，比如应用或者系统的dSYM文件找不到的话，在详情面板上是看不到方法名的，只能看一些读不明的十六进值，所以对我们来说是没有意义的，去掉了会使阅读更清楚些。
+
 
