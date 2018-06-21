@@ -278,6 +278,129 @@
             
               
                 
+                <a class="post-title-link" href="/2018/05/04/slice/" itemprop="url">
+                  slice
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-05-04T11:45:23+08:00" content="2018-05-04">
+              2018-05-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2018/05/04/slice/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/05/04/slice/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>切片的几种常用操作，reslice, append, copy, delete, insert, 排序, 取最值等，这几种基本上可以解决日常开发的绝大部分的问题了。</p>
+<h3 id="slice声明和创建"><a href="#slice声明和创建" class="headerlink" title="slice声明和创建"></a>slice声明和创建</h3><p>slice 本身不是数组，它指向数组的底层<br>作为变长数组饿替代方案，可以关联底层数组的全部或者局部<br>可以直接创建，一般用make(), 也可以从底层数组获取生成<br>如果多个slice 指向相同的底层数组，一个值的改变会影响全部</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2018/05/04/slice/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2018/04/26/字符串操作/" itemprop="url">
                   字符串操作
                 </a>
@@ -550,8 +673,8 @@
             
               
                 
-                <a class="post-title-link" href="/2017/12/22/PhotoBatch-图片去重-3/" itemprop="url">
-                  PhotoBatch-图片去重(3)
+                <a class="post-title-link" href="/2018/04/04/mac下安装go及环境变量配置/" itemprop="url">
+                  mac下安装go及环境变量配置
                 </a>
               
             
@@ -564,8 +687,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-12-22T12:36:51+08:00" content="2017-12-22">
-              2017-12-22
+            <time itemprop="dateCreated" datetime="2018-04-04T17:10:56+08:00" content="2018-04-04">
+              2018-04-04
             </time>
           </span>
 
@@ -578,8 +701,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/macOS/" itemprop="url" rel="index">
-                    <span itemprop="name">macOS</span>
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
                   </a>
                 </span>
 
@@ -594,8 +717,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/12/22/PhotoBatch-图片去重-3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/12/22/PhotoBatch-图片去重-3/" itemprop="commentsCount"></span>
+                <a href="/2018/04/04/mac下安装go及环境变量配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/04/04/mac下安装go及环境变量配置/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -619,137 +742,13 @@
 
       
         
-          <p>参考资料：<a href="http://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html">http://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html</a></p>
-<p>很多时候，我们的文件夹里会有重复或者相似的图片，这类图片自然没有必要存在多份，我们要做的就是遍历所有图片，然后找出相似的，只保留其中一张即可。</p>
-<p>这里的关键技术叫做”感知哈希算法”（Perceptual hash algorithm），它的作用是对每张图片生成一个”指纹”（fingerprint）字符串，然后比较不同图片的指纹。结果越接近，就说明图片越相似。</p>
-<p>另外还找到了其他几种方法，这里是地址<br><a href="http://www.ruanyifeng.com/blog/2013/03/similar_image_search_part_ii.html">http://www.ruanyifeng.com/blog/2013/03/similar_image_search_part_ii.html</a></p>
-<h2 id="第一步，缩小尺寸。"><a href="#第一步，缩小尺寸。" class="headerlink" title="第一步，缩小尺寸。"></a>第一步，缩小尺寸。</h2><p>将图片缩小到8x8的尺寸，总共64个像素。这一步的作用是去除图片的细节，只保留结构、明暗等基本信息，摒弃不同尺寸、比例带来的图片差异。<br>在macOS，使用的是<code>NSImage</code>, 两者的一些操作很类似。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">- (NSImage *)reSizeImage:(NSImage *)image toSize:(CGSize)reSize</div><div class="line">&#123;</div><div class="line">    NSImage *sourceImage = image;</div><div class="line">    if (![sourceImage isValid])&#123;</div><div class="line">        NSLog(@&quot;Invalid Image&quot;);</div><div class="line">    &#125; else &#123;</div><div class="line">        NSImage *smallImage = [[NSImage alloc] initWithSize: reSize];</div><div class="line">        [smallImage lockFocus];</div><div class="line">        [sourceImage setSize: reSize];</div><div class="line">        [[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];</div><div class="line">        [sourceImage drawAtPoint:NSZeroPoint fromRect:CGRectMake(0, 0, reSize.width, reSize.height) operation:NSCompositeCopy fraction:1.0];</div><div class="line">        [smallImage unlockFocus];</div><div class="line">        return smallImage;</div><div class="line">    &#125;</div><div class="line">    return nil;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+          <p>以下命令都是直接在根目录下执行即可</p>
+<h3 id="方法一：homebrew"><a href="#方法一：homebrew" class="headerlink" title="方法一：homebrew"></a>方法一：homebrew</h3><p><code>homebrew</code>是Mac系统下面目前使用最多的管理软件的工具，目前已支持Go，可以通过命令直接安装Go,不过在这之前需要先安装<code>homebrew</code></p>
+<p>安装命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ brew update &amp;&amp; brew upgrade</div><div class="line">$ brew install go</div></pre></td></tr></table></figure></p>
+<p>安装完输入 <code>go env</code> 查看环境信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">GOARCH=&quot;amd64&quot;</div><div class="line">GOBIN=&quot;&quot;</div><div class="line">GOCACHE=&quot;/Users/qianjianeng/Library/Caches/go-build&quot;</div><div class="line">GOEXE=&quot;&quot;</div><div class="line">GOHOSTARCH=&quot;amd64&quot;</div><div class="line">GOHOSTOS=&quot;darwin&quot;</div><div class="line">GOOS=&quot;darwin&quot;</div><div class="line">GOPATH=&quot;/Users/qianjianeng/go&quot;</div><div class="line">GORACE=&quot;&quot;</div><div class="line">GOROOT=&quot;/usr/local/Cellar/go/1.10/libexec&quot;</div><div class="line">GOTMPDIR=&quot;&quot;</div><div class="line">GOTOOLDIR=&quot;/usr/local/Cellar/go/1.10/libexec/pkg/tool/darwin_amd64&quot;</div><div class="line">GCCGO=&quot;gccgo&quot;</div><div class="line">CC=&quot;clang&quot;</div><div class="line">CXX=&quot;clang++&quot;</div><div class="line">CGO_ENABLED=&quot;1&quot;</div><div class="line">CGO_CFLAGS=&quot;-g -O2&quot;</div><div class="line">CGO_CPPFLAGS=&quot;&quot;</div><div class="line">CGO_CXXFLAGS=&quot;-g -O2&quot;</div><div class="line">CGO_FFLAGS=&quot;-g -O2&quot;</div><div class="line">CGO_LDFLAGS=&quot;-g -O2&quot;</div><div class="line">PKG_CONFIG=&quot;pkg-config&quot;</div><div class="line">GOGCCFLAGS=&quot;-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/vj/0nsxxzqd3cgdqnwkzqxqg6zr0000gn/T/go-build786549549=/tmp/go-build -gno-record-gcc-switches -fno-common&quot;</div></pre></td></tr></table></figure>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2017/12/22/PhotoBatch-图片去重-3/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/12/04/PhotoBatch-文件重命名-2/" itemprop="url">
-                  PhotoBatch-文件重命名(2)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-12-04T16:50:20+08:00" content="2017-12-04">
-              2017-12-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/macOS/" itemprop="url" rel="index">
-                    <span itemprop="name">macOS</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/12/04/PhotoBatch-文件重命名-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/12/04/PhotoBatch-文件重命名-2/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>上一篇文章已经写了如何获取文件夹路径，今天实现photoBatch的第一个简单功能，图片批量重命名，当然也可以对任何文件进行重命名</p>
-<h3 id="搭建界面"><a href="#搭建界面" class="headerlink" title="搭建界面"></a>搭建界面</h3><p>搭了个简单的界面，如下图：<br><img src="https://raw.githubusercontent.com/suifengqjn/demoimages/master/PhotoBatch/2_1.png" alt="布局用了purelayout框架"><br>我们需要得到重命名后的文件名前缀，以及文件格式和是否保留原文件，给这3个变量一个默认值。</p>
-<h3 id="文件夹处理"><a href="#文件夹处理" class="headerlink" title="文件夹处理"></a>文件夹处理</h3><p>获取到文件路径后处理：需要对每个文件的路径进行处理，如果是以<br><code>file://</code>开头，需要把前面的<code>file://</code>去掉，这种地址无法处理。这里是对文件夹路径的处理，处理完的路径再加上文件名就是完整的路径。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/12/04/PhotoBatch-文件重命名-2/#more" rel="contents">
+            <a class="btn" href="/2018/04/04/mac下安装go及环境变量配置/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -783,7 +782,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -824,7 +823,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -832,7 +831,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -841,7 +840,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">42</span>
+                <span class="site-state-item-count">46</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
