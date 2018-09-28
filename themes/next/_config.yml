@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "iOS, 钱佳能, 夜千寻墨, 风逝, swift"
+keywords: "iOS, 钱佳能, 夜千寻墨, 风逝, swift golang go 区块链"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -203,7 +203,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
+highlight_theme: night eighties
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
