@@ -6,15 +6,15 @@
 
 
 <html class="theme-next pisces use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -29,7 +29,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -63,23 +63,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="iOS,UIRefreshControl," />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="code随手记" type="application/atom+xml" />
+  <meta name="keywords" content="iOS,UIRefreshControl,">
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+  <link rel="alternate" href="/atom.xml" title="code随手记" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
 
 
 
@@ -87,11 +87,13 @@
 
 
 <meta name="description" content="一：前言记得工作中第一次用的刷新控件是svpulltorefresh，用法稍微有点麻烦，而且bug颇多，后来果断放弃，现在用的是MJRefresh,不管是用法还是bug，都比前一个好多了，但是不久前也遇到了一个致命的bug，有好些情况下会导致MJRefresh陷入一个死循环，导致不断的刷新，只能重启软件才行。MJRefresh工程比较庞大，找到了bug也很难修改，然后还是决定自己写一个，系统提供的">
+<meta name="keywords" content="iOS,UIRefreshControl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自定义刷新控件">
 <meta property="og:url" content="http://gcblog/github.io/2016/11/16/自定义刷新控件/index.html">
 <meta property="og:site_name" content="code随手记">
 <meta property="og:description" content="一：前言记得工作中第一次用的刷新控件是svpulltorefresh，用法稍微有点麻烦，而且bug颇多，后来果断放弃，现在用的是MJRefresh,不管是用法还是bug，都比前一个好多了，但是不久前也遇到了一个致命的bug，有好些情况下会导致MJRefresh陷入一个死循环，导致不断的刷新，只能重启软件才行。MJRefresh工程比较庞大，找到了bug也很难修改，然后还是决定自己写一个，系统提供的">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/suifengqjn/demoimages/master/FMRefresh/1.gif">
 <meta property="og:updated_time" content="2016-11-16T15:05:20.000Z">
 <meta name="twitter:card" content="summary">
@@ -118,7 +120,7 @@
   <title> 自定义刷新控件 | code随手记 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -139,12 +141,12 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">code随手记</span>
       <span class="logo-line-after"><i></i></span>
@@ -171,7 +173,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -181,7 +183,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -191,7 +193,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -201,7 +203,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -211,7 +213,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -224,7 +226,7 @@
             <a href="#" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -267,7 +269,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -296,14 +298,14 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
                   <a href="/categories/iOS技术/" itemprop="url" rel="index">
                     <span itemprop="name">iOS技术</span>
                   </a>
@@ -331,11 +333,20 @@
 
           
           
+             <span id="/2016/11/16/自定义刷新控件/" class="leancloud_visitors" data-flag-title="自定义刷新控件">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
 
           
               &nbsp; | &nbsp;
               <span class="page-pv"><i></i> 浏览
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
               </span>
           
         </div>
@@ -353,7 +364,7 @@
 <h3 id="二-了解-UIRefreshControl"><a href="#二-了解-UIRefreshControl" class="headerlink" title="二: 了解 UIRefreshControl"></a>二: 了解 UIRefreshControl</h3><ul>
 <li>基本使用方法</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//初始化一个control</div><div class="line">UIRefreshControl *control = [[UIRefreshControl alloc] init];</div><div class="line">//给control 添加一个刷新方法</div><div class="line">[control addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];</div><div class="line">//把control 添加到 tableView</div><div class="line">[self.tableView addSubview:control];</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//初始化一个control</span><br><span class="line">UIRefreshControl *control = [[UIRefreshControl alloc] init];</span><br><span class="line">//给control 添加一个刷新方法</span><br><span class="line">[control addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];</span><br><span class="line">//把control 添加到 tableView</span><br><span class="line">[self.tableView addSubview:control];</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>存在的问题</p>
 <ul>
@@ -387,26 +398,26 @@
 <li><p>先看一下我写完的这个控件的使用方法</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">FMRefreshControl *control = [[FMRefreshControl alloc] initWithTargrt:self refreshAction:@selector(refreshAction)];</div><div class="line"></div><div class="line">[self.tableView addSubview:control];</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FMRefreshControl *control = [[FMRefreshControl alloc] initWithTargrt:self refreshAction:@selector(refreshAction)];</span><br><span class="line"></span><br><span class="line">[self.tableView addSubview:control];</span><br></pre></td></tr></table></figure>
 <p>两行代码，用法比系统的还要稍微简单一点。</p>
 <ul>
 <li>再看一下效果</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/suifengqjn/demoimages/master/FMRefresh/1.gif" alt="image"></p>
 <h3 id="四：思路与代码"><a href="#四：思路与代码" class="headerlink" title="四：思路与代码"></a>四：思路与代码</h3><h4 id="1-关于-UIRefreshControl-的几个注意点，通过frame无法修改它的高度，修改高度目前只找到一种方法，先添加到-superViwe-再执行"><a href="#1-关于-UIRefreshControl-的几个注意点，通过frame无法修改它的高度，修改高度目前只找到一种方法，先添加到-superViwe-再执行" class="headerlink" title="1. 关于 UIRefreshControl 的几个注意点，通过frame无法修改它的高度，修改高度目前只找到一种方法，先添加到 superViwe,再执行"></a>1. 关于 <code>UIRefreshControl</code> 的几个注意点，通过frame无法修改它的高度，修改高度目前只找到一种方法，先添加到 <code>superViwe</code>,再执行</h4><p><code>[[_control.subviews objectAtIndex:0] setFrame:CGRectMake(0, 0, _control.bounds.size.width, 30)];</code><br>一开始我是想改变它的高度是否就能改变它的触发刷新的偏移量，然后我找到了这个方法可以修改它的高度，但实际上改变了高度还是无法改变触发下拉刷新的偏移量，所以我们需要自定义去触发刷新这个动作的时机。</p>
-<h4 id="2-手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow-因偏移量变动而导致非人为的刷新。"><a href="#2-手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow-因偏移量变动而导致非人为的刷新。" class="headerlink" title="2.手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow 因偏移量变动而导致非人为的刷新。"></a>2.手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow 因偏移量变动而导致非人为的刷新。</h4><h4 id="3-进入代码阶段"><a href="#3-进入代码阶段" class="headerlink" title="3. 进入代码阶段"></a>3. 进入代码阶段</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">FMRefreshControl *control = [[FMRefreshControl alloc] initWithTargrt:self refreshAction:@selector(refreshAction)];</div><div class="line">[self.tableView addSubview:control];</div></pre></td></tr></table></figure>
-<p>初始化的时候赋一个 target 和 一个 action，当满足条件的时候，我们需要知道让谁去执行刷新方法，有这两个参数足够，当执行到第二行 addSubView的时候，我们需要在control内部实现这个方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">- (void)willMoveToSuperview:(UIView *)newSuperview &#123;</div><div class="line">    [super willMoveToSuperview:newSuperview];</div><div class="line">    </div><div class="line">    if ([newSuperview isKindOfClass:[UIScrollView class]]) &#123;</div><div class="line">        self.superScrollView = (UIScrollView *)newSuperview;</div><div class="line">        </div><div class="line">        [self.superScrollView addObserver:self forKeyPath:@&quot;contentOffset&quot; options:NSKeyValueObservingOptionNew context:nil];</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow-因偏移量变动而导致非人为的刷新。"><a href="#2-手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow-因偏移量变动而导致非人为的刷新。" class="headerlink" title="2.手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow 因偏移量变动而导致非人为的刷新。"></a>2.手动去触发刷新动作也有几个注意点，我们是根据偏移量去触发刷新，但是仅仅靠这一个动作是不够的，还需要一个条件，那就是用户手指响应过屏幕，简单地说，先定义一个变量，如果用户触摸过屏幕，就把变量置为YES，然后再判断用户手指离开时是否达到了触发刷新的偏移量，如果两个条件都满足，就触发刷新，刷新完把变量置为NO，如果不满足，就不触发，也把变量置为NO。这样就避免了UIScrollow 因偏移量变动而导致非人为的刷新。</h4><h4 id="3-进入代码阶段"><a href="#3-进入代码阶段" class="headerlink" title="3. 进入代码阶段"></a>3. 进入代码阶段</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FMRefreshControl *control = [[FMRefreshControl alloc] initWithTargrt:self refreshAction:@selector(refreshAction)];</span><br><span class="line">[self.tableView addSubview:control];</span><br></pre></td></tr></table></figure>
+<p>初始化的时候赋一个 target 和 一个 action，当满足条件的时候，我们需要知道让谁去执行刷新方法，有这两个参数足够，当执行到第二行 addSubView的时候，我们需要在control内部实现这个方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- (void)willMoveToSuperview:(UIView *)newSuperview &#123;</span><br><span class="line">    [super willMoveToSuperview:newSuperview];</span><br><span class="line">    </span><br><span class="line">    if ([newSuperview isKindOfClass:[UIScrollView class]]) &#123;</span><br><span class="line">        self.superScrollView = (UIScrollView *)newSuperview;</span><br><span class="line">        </span><br><span class="line">        [self.superScrollView addObserver:self forKeyPath:@&quot;contentOffset&quot; options:NSKeyValueObservingOptionNew context:nil];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>这样，我们就知道当前这个control被添加到哪个父视图上了，为了安全及代码的严谨，先判断父视图是否属于<br><code>UIScrollView</code>，如果是，就用KVO监听<code>contentOffset</code>属性，这样便能知道用户滑动的偏移量。</p>
-<p>这里我定义了3种状态：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">typedef NS_ENUM(NSInteger, FMRefreshState) &#123;</div><div class="line">    FMRefreshStateNormal = 0,     /** 普通状态 */</div><div class="line">    FMRefreshStatePulling,        /** 释放刷新状态 */</div><div class="line">    FMRefreshStateRefreshing,     /** 正在刷新 */</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<p>以及切换状态后UI的切换和方法的触发：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">- (void)setCurrentStatus:(FMRefreshState)currentStatus &#123;</div><div class="line">    _currentStatus = currentStatus;</div><div class="line">    switch (_currentStatus) &#123;</div><div class="line">        case FMRefreshStateNormal:</div><div class="line">            NSLog(@&quot;切换到Normal&quot;);</div><div class="line">            [self.imageView stopAnimating];</div><div class="line">            self.label.text = FM_Refresh_normal_title;</div><div class="line">            [self.label sizeToFit];</div><div class="line">            self.imageView.image = [UIImage imageNamed:@&quot;refresh_1&quot;];</div><div class="line">            </div><div class="line">            break;</div><div class="line">        case FMRefreshStatePulling:</div><div class="line">            NSLog(@&quot;切换到Pulling&quot;);</div><div class="line">            self.label.text = FM_Refresh_pulling_title;</div><div class="line">            [self.label sizeToFit];</div><div class="line">            self.imageView.animationImages = self.refreshingImages;</div><div class="line">            self.imageView.animationDuration = 1.5;</div><div class="line">            [self.imageView startAnimating];</div><div class="line">            </div><div class="line">            break;</div><div class="line">        case FMRefreshStateRefreshing:</div><div class="line">            NSLog(@&quot;切换到Refreshing&quot;);</div><div class="line">            self.label.text = FM_Refresh_Refreshing_title;</div><div class="line">            [self.label sizeToFit];</div><div class="line">            [self beginRefreshing];</div><div class="line">            self.imageView.animationImages = self.refreshingImages;</div><div class="line">            self.imageView.animationDuration = 1.5;</div><div class="line">            [self.imageView startAnimating];</div><div class="line">            [self doRefreshAction];</div><div class="line">            </div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>切换到<code>FMRefreshStateNormal</code> 停止动画，切换到<code>FMRefreshStatePulling</code> 开始动画，达到这个状态，说明用户已经达到了刷新的偏移量，此时松手便可刷新，切换到<code>FMRefreshStateRefreshing</code>，如果此时往回滑动，小于临界值，那么状态重新切回<code>FMRefreshStateNormal</code>。<br>满足刷新条件，则便可执行以下方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">- (void)doRefreshAction</div><div class="line">&#123;</div><div class="line">#pragma clang diagnostic push</div><div class="line">#pragma clang diagnostic ignored &quot;-Warc-performSelector-leaks&quot;</div><div class="line">    if (self.refreshTarget &amp;&amp; [self.refreshTarget respondsToSelector:self.refreshAction])</div><div class="line">        [self.refreshTarget performSelector:self.refreshAction];</div><div class="line">#pragma clang diagnostic pop</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>下面看最关键的KVO方法，也是这里面最复杂的逻辑处理代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSString *,id&gt; *)change context:(void *)context &#123;</div><div class="line">    </div><div class="line">    //isDragging 属性是指用户手指是否在拖动</div><div class="line">    if (self.superScrollView.isDragging &amp;&amp; !self.isRefreshing) &#123;</div><div class="line">        if (!self.originalOffsetY) &#123;</div><div class="line">            self.originalOffsetY = -self.superScrollView.contentInset.top;</div><div class="line">        &#125;</div><div class="line">        CGFloat normalPullingOffset =  self.originalOffsetY - k_FMRefresh_Height;</div><div class="line">        if (self.currentStatus == FMRefreshStatePulling &amp;&amp; self.superScrollView.contentOffset.y &gt; normalPullingOffset) &#123;</div><div class="line">            </div><div class="line">            self.currentStatus = FMRefreshStateNormal;</div><div class="line">        &#125; else if (self.currentStatus == FMRefreshStateNormal &amp;&amp; self.superScrollView.contentOffset.y &lt; normalPullingOffset) &#123;</div><div class="line">            self.currentStatus = FMRefreshStatePulling;</div><div class="line">        &#125;</div><div class="line">    &#125; else if(!self.superScrollView.isDragging)&#123;</div><div class="line">        </div><div class="line">        if (self.currentStatus == FMRefreshStatePulling) &#123;</div><div class="line">            </div><div class="line">            self.currentStatus = FMRefreshStateRefreshing;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">	//拖动的偏移量，转换成正数</div><div class="line">    CGFloat pullDistance = -self.frame.origin.y;</div><div class="line">    self.backgroundView.frame = CGRectMake(0, 0, k_FMRefresh_Width, pullDistance);</div><div class="line">    CGFloat totalWidth = 35 + 20 + self.label.bounds.size.width;</div><div class="line">    CGFloat imageViewX = (k_FMRefresh_Width - totalWidth)/2;</div><div class="line">    </div><div class="line">    self.imageView.frame = CGRectMake(imageViewX,  -k_FMRefresh_Height+pullDistance+(k_FMRefresh_Height - self.imageView.bounds.size.height)/2, self.imageView.frame.size.width, self.imageView.frame.size.height);</div><div class="line">    self.label.frame = CGRectMake(imageViewX + 35 + 20, -k_FMRefresh_Height + pullDistance + (k_FMRefresh_Height - self.label.bounds.size.height)/2, self.label.frame.size.width, self.label.frame.size.height);   </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这里我定义了3种状态：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">typedef NS_ENUM(NSInteger, FMRefreshState) &#123;</span><br><span class="line">    FMRefreshStateNormal = 0,     /** 普通状态 */</span><br><span class="line">    FMRefreshStatePulling,        /** 释放刷新状态 */</span><br><span class="line">    FMRefreshStateRefreshing,     /** 正在刷新 */</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>以及切换状态后UI的切换和方法的触发：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">- (void)setCurrentStatus:(FMRefreshState)currentStatus &#123;</span><br><span class="line">    _currentStatus = currentStatus;</span><br><span class="line">    switch (_currentStatus) &#123;</span><br><span class="line">        case FMRefreshStateNormal:</span><br><span class="line">            NSLog(@&quot;切换到Normal&quot;);</span><br><span class="line">            [self.imageView stopAnimating];</span><br><span class="line">            self.label.text = FM_Refresh_normal_title;</span><br><span class="line">            [self.label sizeToFit];</span><br><span class="line">            self.imageView.image = [UIImage imageNamed:@&quot;refresh_1&quot;];</span><br><span class="line">            </span><br><span class="line">            break;</span><br><span class="line">        case FMRefreshStatePulling:</span><br><span class="line">            NSLog(@&quot;切换到Pulling&quot;);</span><br><span class="line">            self.label.text = FM_Refresh_pulling_title;</span><br><span class="line">            [self.label sizeToFit];</span><br><span class="line">            self.imageView.animationImages = self.refreshingImages;</span><br><span class="line">            self.imageView.animationDuration = 1.5;</span><br><span class="line">            [self.imageView startAnimating];</span><br><span class="line">            </span><br><span class="line">            break;</span><br><span class="line">        case FMRefreshStateRefreshing:</span><br><span class="line">            NSLog(@&quot;切换到Refreshing&quot;);</span><br><span class="line">            self.label.text = FM_Refresh_Refreshing_title;</span><br><span class="line">            [self.label sizeToFit];</span><br><span class="line">            [self beginRefreshing];</span><br><span class="line">            self.imageView.animationImages = self.refreshingImages;</span><br><span class="line">            self.imageView.animationDuration = 1.5;</span><br><span class="line">            [self.imageView startAnimating];</span><br><span class="line">            [self doRefreshAction];</span><br><span class="line">            </span><br><span class="line">            break;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>切换到<code>FMRefreshStateNormal</code> 停止动画，切换到<code>FMRefreshStatePulling</code> 开始动画，达到这个状态，说明用户已经达到了刷新的偏移量，此时松手便可刷新，切换到<code>FMRefreshStateRefreshing</code>，如果此时往回滑动，小于临界值，那么状态重新切回<code>FMRefreshStateNormal</code>。<br>满足刷新条件，则便可执行以下方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- (void)doRefreshAction</span><br><span class="line">&#123;</span><br><span class="line">#pragma clang diagnostic push</span><br><span class="line">#pragma clang diagnostic ignored &quot;-Warc-performSelector-leaks&quot;</span><br><span class="line">    if (self.refreshTarget &amp;&amp; [self.refreshTarget respondsToSelector:self.refreshAction])</span><br><span class="line">        [self.refreshTarget performSelector:self.refreshAction];</span><br><span class="line">#pragma clang diagnostic pop</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>下面看最关键的KVO方法，也是这里面最复杂的逻辑处理代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSString *,id&gt; *)change context:(void *)context &#123;</span><br><span class="line">    </span><br><span class="line">    //isDragging 属性是指用户手指是否在拖动</span><br><span class="line">    if (self.superScrollView.isDragging &amp;&amp; !self.isRefreshing) &#123;</span><br><span class="line">        if (!self.originalOffsetY) &#123;</span><br><span class="line">            self.originalOffsetY = -self.superScrollView.contentInset.top;</span><br><span class="line">        &#125;</span><br><span class="line">        CGFloat normalPullingOffset =  self.originalOffsetY - k_FMRefresh_Height;</span><br><span class="line">        if (self.currentStatus == FMRefreshStatePulling &amp;&amp; self.superScrollView.contentOffset.y &gt; normalPullingOffset) &#123;</span><br><span class="line">            </span><br><span class="line">            self.currentStatus = FMRefreshStateNormal;</span><br><span class="line">        &#125; else if (self.currentStatus == FMRefreshStateNormal &amp;&amp; self.superScrollView.contentOffset.y &lt; normalPullingOffset) &#123;</span><br><span class="line">            self.currentStatus = FMRefreshStatePulling;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else if(!self.superScrollView.isDragging)&#123;</span><br><span class="line">        </span><br><span class="line">        if (self.currentStatus == FMRefreshStatePulling) &#123;</span><br><span class="line">            </span><br><span class="line">            self.currentStatus = FMRefreshStateRefreshing;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	//拖动的偏移量，转换成正数</span><br><span class="line">    CGFloat pullDistance = -self.frame.origin.y;</span><br><span class="line">    self.backgroundView.frame = CGRectMake(0, 0, k_FMRefresh_Width, pullDistance);</span><br><span class="line">    CGFloat totalWidth = 35 + 20 + self.label.bounds.size.width;</span><br><span class="line">    CGFloat imageViewX = (k_FMRefresh_Width - totalWidth)/2;</span><br><span class="line">    </span><br><span class="line">    self.imageView.frame = CGRectMake(imageViewX,  -k_FMRefresh_Height+pullDistance+(k_FMRefresh_Height - self.imageView.bounds.size.height)/2, self.imageView.frame.size.width, self.imageView.frame.size.height);</span><br><span class="line">    self.label.frame = CGRectMake(imageViewX + 35 + 20, -k_FMRefresh_Height + pullDistance + (k_FMRefresh_Height - self.label.bounds.size.height)/2, self.label.frame.size.width, self.label.frame.size.height);   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>这里最重要的就是处理两点：1. 根据偏移量和用户手指的拖动来切换状态，2. control上面的子视图需要我们根据偏移量来实时更新。</p>
-<p>还有一种情况，上面也提到过，用户先滑动到<code>FMRefreshStatePulling</code>状态，然后又往回滑动，此时的偏移量在0-<code>FMRefreshStatePulling</code>状态的偏移量之间，此时调用自身的 <code>endRefreshing</code>偏移量不会复原，还需要我们自己处理，看了几个老外写的自定义刷新控件，他们都没修复这个bug。他们也没封装，全部代码写在了控制器里，什么都没有改变，只是实现了一个动画效果，还多了个bug,动画效果倒是不错的。有兴趣的可以参考一番：<br><a href="https://www.jackrabbitmobile.com/app-development/ios-custom-pull-to-refresh-contro/" target="_blank" rel="external">https://www.jackrabbitmobile.com/app-development/ios-custom-pull-to-refresh-contro/</a><br><a href="https://possiblemobile.com/2014/05/ios-custom-pull-to-refresh/" target="_blank" rel="external">https://possiblemobile.com/2014/05/ios-custom-pull-to-refresh/</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">- (void)endRefreshing &#123;</div><div class="line">    if (self.currentStatus != FMRefreshStateRefreshing) &#123;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">    self.currentStatus = FMRefreshStateNormal;</div><div class="line">    [super endRefreshing];</div><div class="line">    </div><div class="line">    //在执行刷新的状态中，用户手动拖动到 nornal 状态的 offset，[super endRefreshing] 无法回到初始位置，所以手动设置</div><div class="line">    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^&#123;</div><div class="line">        if(self.superScrollView.contentOffset.y &gt;= self.originalOffsetY - k_FMRefresh_Height &amp;&amp; self.superScrollView.contentOffset.y &lt;= self.originalOffsetY) &#123;</div><div class="line">            CGPoint offset = self.superScrollView.contentOffset;</div><div class="line">            offset.y = self.originalOffsetY;</div><div class="line">            [self.superScrollView setContentOffset:offset animated:YES];</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>最后还有一点不要忘记 <code>dealloc</code>移除监听：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (void)dealloc &#123;</div><div class="line">    [self.superScrollView removeObserver:self forKeyPath:@&quot;contentOffset&quot;];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>还有一种情况，上面也提到过，用户先滑动到<code>FMRefreshStatePulling</code>状态，然后又往回滑动，此时的偏移量在0-<code>FMRefreshStatePulling</code>状态的偏移量之间，此时调用自身的 <code>endRefreshing</code>偏移量不会复原，还需要我们自己处理，看了几个老外写的自定义刷新控件，他们都没修复这个bug。他们也没封装，全部代码写在了控制器里，什么都没有改变，只是实现了一个动画效果，还多了个bug,动画效果倒是不错的。有兴趣的可以参考一番：<br><a href="https://www.jackrabbitmobile.com/app-development/ios-custom-pull-to-refresh-contro/" target="_blank" rel="noopener">https://www.jackrabbitmobile.com/app-development/ios-custom-pull-to-refresh-contro/</a><br><a href="https://possiblemobile.com/2014/05/ios-custom-pull-to-refresh/" target="_blank" rel="noopener">https://possiblemobile.com/2014/05/ios-custom-pull-to-refresh/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">- (void)endRefreshing &#123;</span><br><span class="line">    if (self.currentStatus != FMRefreshStateRefreshing) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    self.currentStatus = FMRefreshStateNormal;</span><br><span class="line">    [super endRefreshing];</span><br><span class="line">    </span><br><span class="line">    //在执行刷新的状态中，用户手动拖动到 nornal 状态的 offset，[super endRefreshing] 无法回到初始位置，所以手动设置</span><br><span class="line">    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^&#123;</span><br><span class="line">        if(self.superScrollView.contentOffset.y &gt;= self.originalOffsetY - k_FMRefresh_Height &amp;&amp; self.superScrollView.contentOffset.y &lt;= self.originalOffsetY) &#123;</span><br><span class="line">            CGPoint offset = self.superScrollView.contentOffset;</span><br><span class="line">            offset.y = self.originalOffsetY;</span><br><span class="line">            [self.superScrollView setContentOffset:offset animated:YES];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最后还有一点不要忘记 <code>dealloc</code>移除监听：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (void)dealloc &#123;</span><br><span class="line">    [self.superScrollView removeObserver:self forKeyPath:@&quot;contentOffset&quot;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>整篇文章从上至下是按照整个完整的思路写下来的，先是提出遇到的问题以及难点，然后最后的代码和思路也是由外至内一路写下来，希望方便大家阅读。这是上篇，下拉刷新的，还有下篇，上拉加载，过两天写，demo中已经有了，不过就是还没优化。</p>
-<p><a href="https://github.com/suifengqjn/FMRefreshControl" target="_blank" rel="external">domo地址：https://github.com/suifengqjn/FMRefreshControl</a></p>
+<p><a href="https://github.com/suifengqjn/FMRefreshControl" target="_blank" rel="noopener">domo地址：https://github.com/suifengqjn/FMRefreshControl</a></p>
 
       
     </div>
@@ -428,13 +439,13 @@
     <div id="QR" style="display: none;">
       
         <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="/images/weixin.jpg" alt="夜千寻墨 WeChat Pay"/>
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="夜千寻墨 WeChat Pay">
           <p>微信打赏</p>
         </div>
       
       
         <div id="alipay" style="display: inline-block">
-          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="夜千寻墨 Alipay"/>
+          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="夜千寻墨 Alipay">
           <p>支付宝打赏</p>
         </div>
       
@@ -460,16 +471,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/16/IOS10语音识别详解/" rel="next" title="iOS语音识别">
-                <i class="fa fa-chevron-left"></i> iOS语音识别
+              <a href="/2016/04/16/runtime详解/" rel="next" title="runtime详解">
+                <i class="fa fa-chevron-left"></i> runtime详解
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/24/swift自动布局/" rel="prev" title="swift自动布局">
-                swift自动布局 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/16/IOS10语音识别详解/" rel="prev" title="iOS语音识别">
+                iOS语音识别 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -496,8 +507,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/16/自定义刷新控件/"
-           data-title="自定义刷新控件" data-url="http://gcblog/github.io/2016/11/16/自定义刷新控件/">
+      <div class="ds-thread" data-thread-key="2016/11/16/自定义刷新控件/" data-title="自定义刷新控件" data-url="http://gcblog/github.io/2016/11/16/自定义刷新控件/">
       </div>
     
   </div>
@@ -522,7 +532,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -532,17 +542,15 @@
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="夜千寻墨" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="夜千寻墨">
           <p class="site-author-name" itemprop="name">夜千寻墨</p>
           <p class="site-description motion-element" itemprop="description">扫码关注微信公众号,及时获取文章更新</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">40</span>
+              <span class="site-state-item-count">45</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -550,7 +558,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -559,7 +567,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">72</span>
+                <span class="site-state-item-count">78</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -600,7 +608,7 @@
               <span class="links-of-author-item">
                 <a href="http://www.jianshu.com/users/527ecf8c8753/latest_articles" target="_blank" title="简书">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-jianshu"></i>
                   
                   简书
                 </a>
@@ -649,10 +657,10 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -929,6 +937,105 @@
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 

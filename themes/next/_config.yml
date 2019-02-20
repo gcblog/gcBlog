@@ -136,7 +136,7 @@ social_icons:
   GitHub: github
   # Twitter: twitter
   Weibo: weibo
-  简单: jianshu
+  简书: jianshu
   instagram: instagram
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
@@ -251,8 +251,8 @@ duoshuo_shortname: yqxm
 # Baidu Share
 # Available value:
 #    button | slide
-#baidushare:
-##  type: button
+# baidushare:
+#  type: button
 
 # Share
 #jiathis:
@@ -296,7 +296,7 @@ facebook_sdk:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: #<app_id>
   app_key: #<app_key>
 
@@ -351,7 +351,7 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 10000
+  limit: 1000
   
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.

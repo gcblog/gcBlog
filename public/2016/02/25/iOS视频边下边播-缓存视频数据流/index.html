@@ -6,15 +6,15 @@
 
 
 <html class="theme-next pisces use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -29,7 +29,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -63,23 +63,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="iOS,AVplayer," />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="code随手记" type="application/atom+xml" />
+  <meta name="keywords" content="iOS,AVplayer,">
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+  <link rel="alternate" href="/atom.xml" title="code随手记" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
 
 
 
@@ -87,11 +87,13 @@
 
 
 <meta name="description" content="google搜索“iOS视频变下边播”，有好几篇博客写到了实现方法，其实只有一篇，其他都是copy的，不过他们都是使用的本地代理服务器的方式，原理很简单，但是缺点也很明显，需要自己写一个本地代理服务器或者使用第三方库httpSever。如果使用httpSever作为本地代理服务器，如果只缓存一个视频是没有问题的，如果缓存多个视频互相切换，本地代理服务器提供的数据很不稳定，crash概率非常大。">
+<meta name="keywords" content="iOS,AVplayer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS视频边下边播--缓存视频数据流">
 <meta property="og:url" content="http://gcblog/github.io/2016/02/25/iOS视频边下边播-缓存视频数据流/index.html">
 <meta property="og:site_name" content="code随手记">
 <meta property="og:description" content="google搜索“iOS视频变下边播”，有好几篇博客写到了实现方法，其实只有一篇，其他都是copy的，不过他们都是使用的本地代理服务器的方式，原理很简单，但是缺点也很明显，需要自己写一个本地代理服务器或者使用第三方库httpSever。如果使用httpSever作为本地代理服务器，如果只缓存一个视频是没有问题的，如果缓存多个视频互相切换，本地代理服务器提供的数据很不稳定，crash概率非常大。">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/suifengqjn/demoimages/master/TBPlayer/1.png">
 <meta property="og:updated_time" content="2016-11-17T14:59:49.000Z">
 <meta name="twitter:card" content="summary">
@@ -118,7 +120,7 @@
   <title> iOS视频边下边播--缓存视频数据流 | code随手记 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -139,12 +141,12 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">code随手记</span>
       <span class="logo-line-after"><i></i></span>
@@ -171,7 +173,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -181,7 +183,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -191,7 +193,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -201,7 +203,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -211,7 +213,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -224,7 +226,7 @@
             <a href="#" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -267,7 +269,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -296,14 +298,14 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
                   <a href="/categories/iOS技术/" itemprop="url" rel="index">
                     <span itemprop="name">iOS技术</span>
                   </a>
@@ -331,11 +333,20 @@
 
           
           
+             <span id="/2016/02/25/iOS视频边下边播-缓存视频数据流/" class="leancloud_visitors" data-flag-title="iOS视频边下边播--缓存视频数据流">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
 
           
               &nbsp; | &nbsp;
               <span class="page-pv"><i></i> 浏览
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
               </span>
           
         </div>
@@ -352,7 +363,7 @@
         <p>google搜索“iOS视频变下边播”，有好几篇博客写到了实现方法，其实只有一篇，其他都是copy的，不过他们都是使用的本地代理服务器的方式，原理很简单，但是缺点也很明显，需要自己写一个本地代理服务器或者使用第三方库httpSever。如果使用httpSever作为本地代理服务器，如果只缓存一个视频是没有问题的，如果缓存多个视频互相切换，本地代理服务器提供的数据很不稳定，crash概率非常大。</p>
 <hr>
 <p>这里我采用ios7以后系统自带的方法实现视频边下边播，这里的边下边播不是单独开一个子线程去下载，而是把视频播放的数据给保存到本地。简而言之，就是使用一遍的流量，既播放了视频，也保存了视频。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">用到的框架：&lt;AVFoundation/AVFoundation.h&gt;</div><div class="line"></div><div class="line">用到的播放器：AVplayer</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">用到的框架：&lt;AVFoundation/AVFoundation.h&gt;</span><br><span class="line"></span><br><span class="line">用到的播放器：AVplayer</span><br></pre></td></tr></table></figure>
 <p>先说一下avplayer自身的播放原理，当我们给播放器设置好url等一些参数后，播放器就会向url所在的服务器发送请求(请求参数有两个值，一个是offset偏移量，另一个是length长度，其实就相当于NSRange一样)，服务器就根据range参数给播放器返回数据。这就是大致的原理，当然实际的过程还是略微比较复杂。</p>
 <hr>
 <p><br></p>
@@ -418,14 +429,14 @@
 <li><p>7.如果服务器返回其他错误，则代理通知播放器网络错误</p>
 </li>
 </ul>
-<h3 id="三：resourceLoader的难点处理"><a href="#三：resourceLoader的难点处理" class="headerlink" title="三：resourceLoader的难点处理"></a>三：resourceLoader的难点处理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">- (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)loadingRequest</div><div class="line">&#123;</div><div class="line">    [self.pendingRequests addObject:loadingRequest];</div><div class="line">    [self dealWithLoadingRequest:loadingRequest];</div><div class="line">    </div><div class="line">    return YES;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="三：resourceLoader的难点处理"><a href="#三：resourceLoader的难点处理" class="headerlink" title="三：resourceLoader的难点处理"></a>三：resourceLoader的难点处理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)loadingRequest</span><br><span class="line">&#123;</span><br><span class="line">    [self.pendingRequests addObject:loadingRequest];</span><br><span class="line">    [self dealWithLoadingRequest:loadingRequest];</span><br><span class="line">    </span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>播放器发出的数据请求从这里开始，我们保存从这里发出的所有请求存放到数组，自己来处理这些请求，当一个请求完成后，对请求发出finishLoading消息，并从数组中移除。正常状态下，当播放器发出下一个请求的时候，会把上一个请求给finish。</p>
 <p>下面这个方法发出的请求说明播放器自己关闭了这个请求，我们不需要再对这个请求进行处理，系统每次结束一个旧的请求，便必然会发出一个或多个新的请求，除了播放器已经获得整个视频完整的数据，这时候就不会再发起请求。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">- (void)resourceLoader:(AVAssetResourceLoader *)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest</div><div class="line">&#123;</div><div class="line">    [self.pendingRequests removeObject:loadingRequest];</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (void)resourceLoader:(AVAssetResourceLoader *)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest</span><br><span class="line">&#123;</span><br><span class="line">    [self.pendingRequests removeObject:loadingRequest];</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>下面这个方法是对播放器发出的请求进行填充数据</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">- (BOOL)respondWithDataForRequest:(AVAssetResourceLoadingDataRequest *)dataRequest</div><div class="line">&#123;</div><div class="line">    long long startOffset = dataRequest.requestedOffset;</div><div class="line"></div><div class="line">    if (dataRequest.currentOffset != 0) &#123;</div><div class="line">        startOffset = dataRequest.currentOffset;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if ((self.task.offset +self.task.downLoadingOffset) &lt; startOffset)</div><div class="line">    &#123;</div><div class="line">        //NSLog(@&quot;NO DATA FOR REQUEST&quot;);</div><div class="line">        return NO;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if (startOffset &lt; self.task.offset) &#123;</div><div class="line">        return NO;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    NSData *filedata = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:_videoPath] options:NSDataReadingMappedIfSafe error:nil];</div><div class="line">    </div><div class="line">    // This is the total data we have from startOffset to whatever has been downloaded so far</div><div class="line">    NSUInteger unreadBytes = self.task.downLoadingOffset - ((NSInteger)startOffset - self.task.offset);</div><div class="line">    </div><div class="line">    // Respond with whatever is available if we can&apos;t satisfy the request fully yet</div><div class="line">    NSUInteger numberOfBytesToRespondWith = MIN((NSUInteger)dataRequest.requestedLength, unreadBytes);</div><div class="line">    </div><div class="line">    </div><div class="line">    [dataRequest respondWithData:[filedata subdataWithRange:NSMakeRange((NSUInteger)startOffset- self.task.offset, (NSUInteger)numberOfBytesToRespondWith)]];</div><div class="line">    </div><div class="line">    </div><div class="line">    </div><div class="line">    long long endOffset = startOffset + dataRequest.requestedLength;</div><div class="line">    BOOL didRespondFully = (self.task.offset + self.task.downLoadingOffset) &gt;= endOffset;</div><div class="line"></div><div class="line">    return didRespondFully;</div><div class="line">  </div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)respondWithDataForRequest:(AVAssetResourceLoadingDataRequest *)dataRequest</span><br><span class="line">&#123;</span><br><span class="line">    long long startOffset = dataRequest.requestedOffset;</span><br><span class="line"></span><br><span class="line">    if (dataRequest.currentOffset != 0) &#123;</span><br><span class="line">        startOffset = dataRequest.currentOffset;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    if ((self.task.offset +self.task.downLoadingOffset) &lt; startOffset)</span><br><span class="line">    &#123;</span><br><span class="line">        //NSLog(@&quot;NO DATA FOR REQUEST&quot;);</span><br><span class="line">        return NO;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    if (startOffset &lt; self.task.offset) &#123;</span><br><span class="line">        return NO;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    NSData *filedata = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:_videoPath] options:NSDataReadingMappedIfSafe error:nil];</span><br><span class="line">    </span><br><span class="line">    // This is the total data we have from startOffset to whatever has been downloaded so far</span><br><span class="line">    NSUInteger unreadBytes = self.task.downLoadingOffset - ((NSInteger)startOffset - self.task.offset);</span><br><span class="line">    </span><br><span class="line">    // Respond with whatever is available if we can&apos;t satisfy the request fully yet</span><br><span class="line">    NSUInteger numberOfBytesToRespondWith = MIN((NSUInteger)dataRequest.requestedLength, unreadBytes);</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    [dataRequest respondWithData:[filedata subdataWithRange:NSMakeRange((NSUInteger)startOffset- self.task.offset, (NSUInteger)numberOfBytesToRespondWith)]];</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    long long endOffset = startOffset + dataRequest.requestedLength;</span><br><span class="line">    BOOL didRespondFully = (self.task.offset + self.task.downLoadingOffset) &gt;= endOffset;</span><br><span class="line"></span><br><span class="line">    return didRespondFully;</span><br><span class="line">  </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这是对存放所有的请求的数组进行处理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">- (void)processPendingRequests</div><div class="line">&#123;</div><div class="line">    NSMutableArray *requestsCompleted = [NSMutableArray array];  //请求完成的数组</div><div class="line">    //每次下载一块数据都是一次请求，把这些请求放到数组，遍历数组</div><div class="line">    for (AVAssetResourceLoadingRequest *loadingRequest in self.pendingRequests)</div><div class="line">    &#123;</div><div class="line">        [self fillInContentInformation:loadingRequest.contentInformationRequest]; //对每次请求加上长度，文件类型等信息</div><div class="line">        </div><div class="line">        BOOL didRespondCompletely = [self respondWithDataForRequest:loadingRequest.dataRequest]; //判断此次请求的数据是否处理完全</div><div class="line">        </div><div class="line">        if (didRespondCompletely) &#123;</div><div class="line"></div><div class="line">            [requestsCompleted addObject:loadingRequest];  //如果完整，把此次请求放进 请求完成的数组</div><div class="line">            [loadingRequest finishLoading];</div><div class="line">            </div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    [self.pendingRequests removeObjectsInArray:requestsCompleted];   //在所有请求的数组中移除已经完成的</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">- (void)processPendingRequests</span><br><span class="line">&#123;</span><br><span class="line">    NSMutableArray *requestsCompleted = [NSMutableArray array];  //请求完成的数组</span><br><span class="line">    //每次下载一块数据都是一次请求，把这些请求放到数组，遍历数组</span><br><span class="line">    for (AVAssetResourceLoadingRequest *loadingRequest in self.pendingRequests)</span><br><span class="line">    &#123;</span><br><span class="line">        [self fillInContentInformation:loadingRequest.contentInformationRequest]; //对每次请求加上长度，文件类型等信息</span><br><span class="line">        </span><br><span class="line">        BOOL didRespondCompletely = [self respondWithDataForRequest:loadingRequest.dataRequest]; //判断此次请求的数据是否处理完全</span><br><span class="line">        </span><br><span class="line">        if (didRespondCompletely) &#123;</span><br><span class="line"></span><br><span class="line">            [requestsCompleted addObject:loadingRequest];  //如果完整，把此次请求放进 请求完成的数组</span><br><span class="line">            [loadingRequest finishLoading];</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    [self.pendingRequests removeObjectsInArray:requestsCompleted];   //在所有请求的数组中移除已经完成的</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>resourceLoader的难点基本上就是上面这点了，说到播放器，下面便顺便讲下AVPlayer的难点。</p>
 <h3 id="四：难点：对播放器状态的捕获"><a href="#四：难点：对播放器状态的捕获" class="headerlink" title="四：难点：对播放器状态的捕获"></a>四：难点：对播放器状态的捕获</h3><ul>
 <li>1.举个简单的例子，视频总长度60分，现在缓冲的数据才10分钟，然后拖动到20分钟的位置进行播放，在网速较慢的时候，视频从当前位置开始播放，必然会出现一段时间的卡顿，为了有一个更好的用户体验，在卡顿的时候，我们需要加一个菊花转的状态，现在问题就来了。</li>
@@ -434,11 +445,11 @@
 <li>2.在拖动到未缓冲区域内，是否需要加菊花转，如果加，要显示多久再消失，而且如果在网速很慢的时候，播放器如果等了太久，哪怕最后有数据了，播放器也已经“死”了，它自己无法恢复播放，这个时候需要我们人为的去恢复播放，如果恢复播放不成功，那么过一段时间需要再次恢复播放，是否恢复播放成功，这里也需要捕获其状态。所以，如果要有一个好的用户体验，我们需要时时知道播放器的状态。</li>
 </ul>
 <p>有两个状态需要捕获，一个是正在缓冲，一个是正在播放，监听播放的“playbackBufferEmpty”属性就可以捕获正在缓冲状态，播放器的时间监听器则可以捕获正在播放状态，我的demo中一共有4个状态：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">typedef NS_ENUM(NSInteger, TBPlayerState) &#123;</div><div class="line">    TBPlayerStateBuffering = 1,</div><div class="line">    TBPlayerStatePlaying   = 2,</div><div class="line">    TBPlayerStateStopped   = 3,</div><div class="line">    TBPlayerStatePause     = 4</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">typedef NS_ENUM(NSInteger, TBPlayerState) &#123;</span><br><span class="line">    TBPlayerStateBuffering = 1,</span><br><span class="line">    TBPlayerStatePlaying   = 2,</span><br><span class="line">    TBPlayerStateStopped   = 3,</span><br><span class="line">    TBPlayerStatePause     = 4</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>这样可以对播放器更好的把握和处理了。<br>然后说一说在缓冲时候的处理，以及缓冲后多久去播放，处理方法：<br>进入缓冲状态后，缓冲2秒后去手动播放，如果播放不成功（缓冲的数据太少，还不足以播放），那就再缓冲2秒再次播放，如此循环，看详细代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">- (void)bufferingSomeSecond</div><div class="line">&#123;</div><div class="line">    // playbackBufferEmpty会反复进入，因此在bufferingOneSecond延时播放执行完之前再调用bufferingSomeSecond都忽略</div><div class="line">    static BOOL isBuffering = NO;</div><div class="line">    if (isBuffering) &#123;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">    isBuffering = YES;</div><div class="line">    </div><div class="line">    // 需要先暂停一小会之后再播放，否则网络状况不好的时候时间在走，声音播放不出来</div><div class="line">    [self.player pause];</div><div class="line">    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^&#123;</div><div class="line">        </div><div class="line">        // 如果此时用户已经暂停了，则不再需要开启播放了</div><div class="line">        if (self.isPauseByUser) &#123;</div><div class="line">            isBuffering = NO;</div><div class="line">            return;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        [self.player play];</div><div class="line">        // 如果执行了play还是没有播放则说明还没有缓存好，则再次缓存一段时间</div><div class="line">        isBuffering = NO;</div><div class="line">        if (!self.currentPlayerItem.isPlaybackLikelyToKeepUp) &#123;</div><div class="line">            [self bufferingSomeSecond];</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">- (void)bufferingSomeSecond</span><br><span class="line">&#123;</span><br><span class="line">    // playbackBufferEmpty会反复进入，因此在bufferingOneSecond延时播放执行完之前再调用bufferingSomeSecond都忽略</span><br><span class="line">    static BOOL isBuffering = NO;</span><br><span class="line">    if (isBuffering) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    isBuffering = YES;</span><br><span class="line">    </span><br><span class="line">    // 需要先暂停一小会之后再播放，否则网络状况不好的时候时间在走，声音播放不出来</span><br><span class="line">    [self.player pause];</span><br><span class="line">    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^&#123;</span><br><span class="line">        </span><br><span class="line">        // 如果此时用户已经暂停了，则不再需要开启播放了</span><br><span class="line">        if (self.isPauseByUser) &#123;</span><br><span class="line">            isBuffering = NO;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        [self.player play];</span><br><span class="line">        // 如果执行了play还是没有播放则说明还没有缓存好，则再次缓存一段时间</span><br><span class="line">        isBuffering = NO;</span><br><span class="line">        if (!self.currentPlayerItem.isPlaybackLikelyToKeepUp) &#123;</span><br><span class="line">            [self bufferingSomeSecond];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这个demo花了我很长的时间，实现这个demo我也遇到了很多坑最后才完成的，现在我奉献出来，也许对你会有所帮助。如果你觉得不错，还请为我Star一个，也算是对我的支持和鼓励。</p>
-<p><a href="https://github.com/suifengqjn/TBPlayer" target="_blank" rel="external">demo下载地址</a><br>也可以去我的简书博客查看更多文章<br><a href="http://www.jianshu.com/users/527ecf8c8753/latest_articles" target="_blank" rel="external">博客地址</a></p>
+<p><a href="https://github.com/suifengqjn/TBPlayer" target="_blank" rel="noopener">demo下载地址</a><br>也可以去我的简书博客查看更多文章<br><a href="http://www.jianshu.com/users/527ecf8c8753/latest_articles" target="_blank" rel="noopener">博客地址</a></p>
 
       
     </div>
@@ -460,13 +471,13 @@
     <div id="QR" style="display: none;">
       
         <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="/images/weixin.jpg" alt="夜千寻墨 WeChat Pay"/>
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="夜千寻墨 WeChat Pay">
           <p>微信打赏</p>
         </div>
       
       
         <div id="alipay" style="display: inline-block">
-          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="夜千寻墨 Alipay"/>
+          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="夜千寻墨 Alipay">
           <p>支付宝打赏</p>
         </div>
       
@@ -528,8 +539,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/25/iOS视频边下边播-缓存视频数据流/"
-           data-title="iOS视频边下边播--缓存视频数据流" data-url="http://gcblog/github.io/2016/02/25/iOS视频边下边播-缓存视频数据流/">
+      <div class="ds-thread" data-thread-key="2016/02/25/iOS视频边下边播-缓存视频数据流/" data-title="iOS视频边下边播--缓存视频数据流" data-url="http://gcblog/github.io/2016/02/25/iOS视频边下边播-缓存视频数据流/">
       </div>
     
   </div>
@@ -554,7 +564,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -564,17 +574,15 @@
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="夜千寻墨" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="夜千寻墨">
           <p class="site-author-name" itemprop="name">夜千寻墨</p>
           <p class="site-description motion-element" itemprop="description">扫码关注微信公众号,及时获取文章更新</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">40</span>
+              <span class="site-state-item-count">45</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -582,7 +590,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -591,7 +599,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">72</span>
+                <span class="site-state-item-count">78</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -632,7 +640,7 @@
               <span class="links-of-author-item">
                 <a href="http://www.jianshu.com/users/527ecf8c8753/latest_articles" target="_blank" title="简书">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-jianshu"></i>
                   
                   简书
                 </a>
@@ -681,10 +689,10 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -961,6 +969,105 @@
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 

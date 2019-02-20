@@ -68,7 +68,16 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+
+# deploy:
+#   type: git
+#   repo: root@155.138.161.50:blog.git
+#   branch: master
+
 deploy:
-  type: git
+- type: git
+  repo: root@155.138.161.50:blog.git
+  branch: master
+- type: git
   repo: https://github.com/gcblog/gcblog.github.io.git
   branch: master

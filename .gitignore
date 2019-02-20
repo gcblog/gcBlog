@@ -1,5 +1,9 @@
 ## Build generated
-public/
+
+public/*
+node_modules/*
+themes/*
+vendor/*
 
 #other
 *.html

@@ -6,15 +6,15 @@
 
 
 <html class="theme-next pisces use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -29,7 +29,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -63,37 +63,37 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="iOS,workspace," />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="code随手记" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <meta name="keywords" content="iOS,workspace,">
 
 
 
 
 
+  <link rel="alternate" href="/atom.xml" title="code随手记" type="application/atom+xml">
 
-<meta name="description" content="在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。
-一:targettarget指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系">
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
+
+
+
+
+
+
+<meta name="description" content="在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。 一:targettarget指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系">
+<meta name="keywords" content="iOS,workspace">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Xcode多工程联编及工程依赖">
 <meta property="og:url" content="http://gcblog/github.io/2016/03/12/Xcode多工程联编及工程依赖/index.html">
 <meta property="og:site_name" content="code随手记">
-<meta property="og:description" content="在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。
-一:targettarget指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系">
+<meta property="og:description" content="在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。 一:targettarget指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/suifengqjn/demoimages/master/XcodeWorkSpace/1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/suifengqjn/demoimages/master/XcodeWorkSpace/2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/suifengqjn/demoimages/master/XcodeWorkSpace/3.png">
@@ -103,8 +103,7 @@
 <meta property="og:updated_time" content="2016-11-17T14:26:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Xcode多工程联编及工程依赖">
-<meta name="twitter:description" content="在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。
-一:targettarget指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系">
+<meta name="twitter:description" content="在了解xcode构建原则之前，需要熟悉workspace相关的概念，即workspace,project和target。 一:targettarget指定了构建的product,包含将workspace或project中的一组文件构建成product的指令。单个target定义一个product,它将输入（源文件和处理这些源文件的指令（包含所设定的构建settings和phases））组织进构建系">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/suifengqjn/demoimages/master/XcodeWorkSpace/1.png">
 
 
@@ -126,7 +125,7 @@
   <title> Xcode多工程联编及工程依赖 | code随手记 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -147,12 +146,12 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">code随手记</span>
       <span class="logo-line-after"><i></i></span>
@@ -179,7 +178,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -189,7 +188,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -199,7 +198,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -209,7 +208,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -219,7 +218,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -232,7 +231,7 @@
             <a href="#" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -275,7 +274,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -304,14 +303,14 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
                   <a href="/categories/iOS配置/" itemprop="url" rel="index">
                     <span itemprop="name">iOS配置</span>
                   </a>
@@ -339,11 +338,20 @@
 
           
           
+             <span id="/2016/03/12/Xcode多工程联编及工程依赖/" class="leancloud_visitors" data-flag-title="Xcode多工程联编及工程依赖">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
 
           
               &nbsp; | &nbsp;
               <span class="page-pv"><i></i> 浏览
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
               </span>
           
         </div>
@@ -375,8 +383,8 @@
 <p>在左边的 project navigator 右键菜单 New Project ,然后选择 Ios &gt; Application &gt; Single View Application，然后输入项目名称 MyUseStatic，下面配置让它依赖 MyStaticLib，打开 Build Phases配置选项 然后展开 Link Binary With Libraries ，点击 + 会看到 Workspace &gt; libMyStaticLib.a ，选中它，就让此项目产生了对 MyStaticLib的依赖关系，然后在 Build S Setting配置选项里 搜索 USER_HEADER_SEARCH_PATHS，将它的值设为 MyStaticLib 的build prouect 路径，在import静态库中的新文件时，会到这个路径中寻找。</p>
 <p><img src="https://raw.githubusercontent.com/suifengqjn/demoimages/master/XcodeWorkSpace/6.png" alt="image"></p>
 <p><img src="https://raw.githubusercontent.com/suifengqjn/demoimages/master/XcodeWorkSpace/7.png" alt="image"><br>现在编译  MyUseStatic 会自动先编译依赖的 MyStaticLib。</p>
-<p>参考文章：<a href="http://blog.carbonfive.com/2011/04/04/using-open-source-static-libraries-in-xcode-4/#set_the_installation_directory" target="_blank" rel="external">http://blog.carbonfive.com/2011/04/04/using-open-source-static-libraries-in-xcode-4/#set_the_installation_directory</a></p>
-<p><a href="http://gcblog.github.io" target="_blank" rel="external">!更多文章可前往我的blog：http://gcblog.github.io</a></p>
+<p>参考文章：<a href="http://blog.carbonfive.com/2011/04/04/using-open-source-static-libraries-in-xcode-4/#set_the_installation_directory" target="_blank" rel="noopener">http://blog.carbonfive.com/2011/04/04/using-open-source-static-libraries-in-xcode-4/#set_the_installation_directory</a></p>
+<p><a href="http://gcblog.github.io" target="_blank" rel="noopener">!更多文章可前往我的blog：http://gcblog.github.io</a></p>
 
       
     </div>
@@ -398,13 +406,13 @@
     <div id="QR" style="display: none;">
       
         <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="/images/weixin.jpg" alt="夜千寻墨 WeChat Pay"/>
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="夜千寻墨 WeChat Pay">
           <p>微信打赏</p>
         </div>
       
       
         <div id="alipay" style="display: inline-block">
-          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="夜千寻墨 Alipay"/>
+          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="夜千寻墨 Alipay">
           <p>支付宝打赏</p>
         </div>
       
@@ -466,8 +474,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/12/Xcode多工程联编及工程依赖/"
-           data-title="Xcode多工程联编及工程依赖" data-url="http://gcblog/github.io/2016/03/12/Xcode多工程联编及工程依赖/">
+      <div class="ds-thread" data-thread-key="2016/03/12/Xcode多工程联编及工程依赖/" data-title="Xcode多工程联编及工程依赖" data-url="http://gcblog/github.io/2016/03/12/Xcode多工程联编及工程依赖/">
       </div>
     
   </div>
@@ -492,7 +499,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -502,17 +509,15 @@
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="夜千寻墨" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="夜千寻墨">
           <p class="site-author-name" itemprop="name">夜千寻墨</p>
           <p class="site-description motion-element" itemprop="description">扫码关注微信公众号,及时获取文章更新</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">40</span>
+              <span class="site-state-item-count">45</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -520,7 +525,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -529,7 +534,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">72</span>
+                <span class="site-state-item-count">78</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -570,7 +575,7 @@
               <span class="links-of-author-item">
                 <a href="http://www.jianshu.com/users/527ecf8c8753/latest_articles" target="_blank" title="简书">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-jianshu"></i>
                   
                   简书
                 </a>
@@ -619,10 +624,10 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -899,6 +904,105 @@
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
